@@ -1,0 +1,16 @@
+.barPosition {
+  margin: 0px 30px 0px 10px;
+}
+.barPositionMobile {
+  margin: 0px 40px 0px 20px;
+  @media (max-width: 1199px) {
+    margin: 0px 0px 0px 30px;
+  }
+  @media (max-width: 900px) {
+    margin: 0px 0px 0px 40px;
+  }
+  @media (max-width: 599px) {
+    margin: 0px 0px 0px 0px;
+    display: none;
+  }
+}

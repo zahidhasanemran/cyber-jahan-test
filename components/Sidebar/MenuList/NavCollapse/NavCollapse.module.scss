@@ -1,0 +1,21 @@
+@import "styles/scss/themes-vars.module.scss";
+
+.listPaddingNone {
+  padding-top: 0px;
+  padding-bottom: 0;
+}
+
+.TypoFive {
+  font-size: 1.125rem !important;
+  font-weight: 500 !important;
+  color: $textPrimary !important;
+  @media (max-width: 1024px) {
+    font-size: 1rem !important;
+  }
+}
+
+.TypoFive {
+  svg {
+    fill: $grey600 !important;
+  }
+}

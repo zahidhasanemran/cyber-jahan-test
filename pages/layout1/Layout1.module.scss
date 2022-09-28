@@ -1,0 +1,209 @@
+// color variants
+@import "styles/scss/themes-vars.module.scss";
+
+.bgBlack {
+  background: $darkPaper;
+}
+
+.Layout {
+}
+.logo {
+  text-align: center;
+  img {
+    width: 70px;
+    height: auto;
+    @media (max-width: 767px) {
+      width: 55px;
+    }
+  }
+}
+.registration {
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    @media (max-width: 1366px) {
+      font-size: 32px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 28px;
+    }
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+    p {
+      margin: 5px 0px 10px 5px;
+      span {
+        @media (max-width: 767px) {
+          font-family: "Cormorant Garamond", serif;
+          display: block;
+          font-style: italic;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+.bgWhite {
+  background: #fff;
+}
+.label1 {
+  margin-top: 50px;
+  padding-top: 40px !important;
+  position: relative;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+  .areaThree {
+    @media (max-width: 1366px) {
+      display: block;
+    }
+  }
+}
+.absoluteLabel {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  background: #0775f5;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 21px;
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  @media (max-width: 767px) {
+    padding: 6px 20px;
+  }
+}
+.label2 {
+  margin-top: -3px;
+  padding-top: 45px !important;
+  .areaThree {
+    @media (max-width: 1366px) {
+      display: block;
+    }
+    &:last-child {
+    }
+  }
+}
+.terms {
+  margin-top: -3px;
+  padding-top: 40px !important;
+}
+.contentTC {
+  text-align: center;
+  padding-left: 160px;
+  padding-right: 160px;
+  @media (max-width: 1023px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media (max-width: 768px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.customFontProp {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  @media (max-width: 1440px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1280px) {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+.formGoupCusotmRoot {
+  margin: 20px 0px;
+}
+.footNote {
+  font-weight: 500;
+  color: $textGray;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.diffColorSm {
+  @media (max-width: 768px) {
+    color: #157df5 !important;
+    text-align: center;
+  }
+}
+.singleInput {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px dashed $borderSecondary;
+  margin-bottom: 35px;
+  @media (max-width: 1440px) {
+    gap: 20px 10px;
+  }
+  @media (max-width: 767px) {
+    gap: 10px 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  p {
+    @media (max-width: 767px) {
+      display: inline;
+      line-height: 2;
+    }
+  }
+}
+.areaThree {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(calc(33.3333% - 15px), 1fr));
+  @media (max-width: 1440px) {
+    gap: 20px 10px;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+  .singleInput {
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}
+.borderWithRadius {
+  border-radius: 15px;
+  border: 3px solid $borderColor;
+  padding: 25px 25px 15px 35px;
+  @media (max-width: 767px) {
+    padding: 25px 20px 15px 30px;
+  }
+}
+.formWrapper {
+}
+.bold {
+  color: $textBlackish;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin: 0px 0px 5px 0px;
+  white-space: nowrap;
+  // min-width: 80px;
+  @media (max-width: 1440px) {
+    font-size: 1rem;
+  }
+  // @media (max-width: 767px) {
+  //   font-size: 15px;
+  // }
+}
+
+.grayMD {
+  color: $textGray;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin: 0px 0px 5px 0px;
+  line-height: 1.2;
+  @media (max-width: 1440px) {
+    font-size: 1rem;
+  }
+  // @media (max-width: 767px) {
+  //   font-size: 15px;
+  // }
+}

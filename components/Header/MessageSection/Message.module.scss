@@ -1,0 +1,96 @@
+@import "styles/scss/themes-vars.module.scss";
+
+.messagePosition {
+  inset: 0px 0px auto auto;
+  margin: 0px;
+  transform: translate(-114px, 79px);
+  position: absolute !important;
+  width: 400px !important;
+  left: auto !important;
+  transition: all 0.3s linear;
+}
+
+.MessageColor {
+  border-radius: 50%;
+}
+
+.Black {
+  color: #000;
+  background: transparent;
+  @media (max-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+.customBadge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: $messageColor;
+  color: #fff;
+  width: auto;
+  height: 20px;
+  border-radius: 3px;
+  right: 6px;
+  top: 5px;
+  @media (max-width: 1024px) {
+    font-size: 0.7rem;
+  }
+}
+.viewAllBtn {
+  background: #0d6efd;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  padding: 7px 17px;
+}
+
+.singleStack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.borderGray {
+  border-bottom: 1px solid #ddd;
+}
+
+.messageFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 25px;
+  @extend .borderGray;
+  h6 {
+    color: #494949;
+    font-weight: 400;
+  }
+}
+
+.signleMessage {
+  display: flex;
+  gap: 0px 15px;
+  align-items: center;
+  padding: 20px 15px;
+  @extend .borderGray;
+}
+
+.mediaImg {
+  width: 45px;
+}
+
+.mediaContent {
+  h4 {
+    color: $textGray;
+    font-weight: 600;
+  }
+}
+
+.mediaContentSub1 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #494949;
+  margin: 7px 0px 2px 0px;
+}
+.mediaContentSub2 {
+  font-size: 15px;
+}

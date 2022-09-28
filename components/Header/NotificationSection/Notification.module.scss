@@ -1,0 +1,20 @@
+@import "styles/scss/themes-vars.module.scss";
+@import "../MessageSection/Message.module.scss";
+
+.notificationPosition {
+  inset: 0px 0px auto auto;
+  margin: 0px;
+  transform: translate(-193px, 79px);
+  position: absolute !important;
+  left: auto !important;
+  transition: all 0.3s linear;
+}
+
+.Black {
+  @extend .Black;
+}
+
+.customBadge {
+  @extend .customBadge;
+  background: $chatColor;
+}

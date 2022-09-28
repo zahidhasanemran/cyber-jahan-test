@@ -1,0 +1,20 @@
+@import "styles/scss/themes-vars.module.scss";
+
+.borderNone {
+  border: none !important;
+}
+.profilePosition {
+  position: absolute !important;
+  right: 20px !important;
+  top: 80px !important;
+  width: 350px !important;
+  left: auto !important;
+  transition: all 0.3s linear;
+}
+.customAvaterSize {
+  width: 40px;
+  height: 40px;
+}
+.bgRemoveOnHover:hover {
+  background-color: transparent !important;
+}

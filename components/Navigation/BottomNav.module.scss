@@ -1,0 +1,22 @@
+@import "styles/scss/themes-vars.module.scss";
+@import "../Header/MessageSection/Message.module.scss";
+@import "../Header/ProfileSection/ProfileSection.module.scss";
+
+.MessageColor {
+  @extend .MessageColor;
+}
+.customBadge {
+  @extend .customBadge;
+}
+.Black {
+  @extend .Black;
+}
+.borderNone {
+  @extend .borderNone;
+}
+.bgRemoveOnHover {
+  @extend .bgRemoveOnHover;
+}
+.customAvaterSize {
+  @extend .customAvaterSize;
+}
