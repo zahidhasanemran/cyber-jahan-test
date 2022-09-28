@@ -1,0 +1,37 @@
+@import "styles/scss/themes-vars.module.scss";
+@import "../Header/MessageSection/Message.module.scss";
+
+.sheetBody {
+}
+.iconWrapper {
+  color: inherit;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -28px;
+}
+
+.Wrapper div[data-rsbs-overlay="true"] {
+  width: 100%;
+  // margin: 5px auto 80px auto;
+  height: calc(100vh - 188px);
+}
+.Wrapper div[data-rsbs-content="true"] {
+  height: 100%;
+  position: relative;
+}
+.Wrapper div[data-rsbs-scroll="true"] {
+  position: relative;
+}
+.Wrapper div[data-rsbs-overlay="true"],
+.Wrapper div[data-rsbs-backdrop="true"],
+.Wrapper div[data-rsbs-root="true"] {
+  z-index: 9 !important;
+}
+// [data-rsbs-overlay], [data-rsbs-backdrop], [data-rsbs-root]:after
+
+// div[data-rsbs-overlay="true"],
+// div[data-rsbs-backdrop="true"],
+// div[data-rsbs-root="true"]:after {
+//   z-index: 9 !important;
+// }

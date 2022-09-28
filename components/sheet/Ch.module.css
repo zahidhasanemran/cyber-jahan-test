@@ -1,0 +1,5 @@
+div[data-rsbs-overlay="true"],
+div[data-rsbs-backdrop="true"],
+div[data-rsbs-root="true"]:after {
+  z-index: 9 !important;
+}

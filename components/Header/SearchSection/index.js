@@ -1,21 +1,14 @@
-import CloseIcon from "@mui/icons-material/Close"
 import SearchIcon from "@mui/icons-material/Search"
 import {
-  Avatar,
   Box,
-  ButtonBase,
-  Card,
-  Grid,
   InputAdornment,
   OutlinedInput,
-  Popper,
   useMediaQuery,
 } from "@mui/material"
 import { styled, useTheme } from "@mui/material/styles"
-import PopupState, { bindPopper, bindToggle } from "material-ui-popup-state"
+import { shouldForwardProp } from "@mui/system"
 import { useEffect, useState } from "react"
 import styles from "./Search.module.scss"
-import { shouldForwardProp } from "@mui/system"
 {
   /*===================================
 Styles 

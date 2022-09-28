@@ -20,10 +20,19 @@ export default function ThemeContextProvider({ children }) {
     setOpened(status)
   }
 
+  /*==============================
+  Mobile Message bottom sheet 
+  ==============================*/
   const [searchOpen, setSearchOpen] = useState(false)
   const SearchOpenHandler = () => setSearchOpen(true)
   const SearchCloseHandler = () => setSearchOpen(false)
-  console.log(searchOpen)
+
+  /*==============================
+  Mobile Notification bottom sheet
+  ==============================*/
+  const [notify, setNotify] = useState(false)
+  const notiOpneHandler = () => setNotify(true)
+  const notiCloseHandler = () => setNotify(false)
 
   const value = useMemo(
     () => ({
@@ -34,8 +43,11 @@ export default function ThemeContextProvider({ children }) {
       searchOpen,
       SearchOpenHandler,
       SearchCloseHandler,
+      notiOpneHandler,
+      notiCloseHandler,
+      notify,
     }),
-    [isOpen, opened]
+    [isOpen, opened, searchOpen, notify]
   )
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 }

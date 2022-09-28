@@ -17,7 +17,8 @@ import BottomNav from "@components/Navigation/BottomNav"
 import { BrowserView, MobileView } from "react-device-detect"
 
 import styles from "./Layout.module.scss"
-import SearchSheet from "@components/sheet/SearchSheet"
+import ChatSeet from "@components/sheet/ChatSeet"
+import Notification from "@components/sheet/Notification"
 
 /*==============================
 Main tage Styles
@@ -108,6 +109,8 @@ export default function Layout({ children }) {
         <Box sx={{ p: { xs: 0, md: 2 } }} className={styles.children}>
           {children}
         </Box>
+        <ChatSeet />
+        <Notification />
         <footer className={styles.Footer}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
@@ -120,8 +123,6 @@ export default function Layout({ children }) {
             </Grid>
           </Grid>
         </footer>
-
-        {/* <SearchSheet /> */}
       </Main>
 
       <Box className={styles.mobileBottomNav}>
