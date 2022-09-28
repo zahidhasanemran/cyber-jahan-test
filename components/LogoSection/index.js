@@ -24,7 +24,9 @@ const LogoSection = () => {
               md: `300px`,
               lg: `${drawerWidth}px`,
               xl: `${drawerWidth}px`,
+
             },
+            cursor: 'pointer'
           }}>
           <img
             src={LogoFullImg}
